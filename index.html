@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>BMI-Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="panel">
+    		<h2 class="text-center">Cek BMI Anda</h2>
+    		
+    			<p id="introText" class="text-center">Masukkan berat dan tinggi badan anda untuk mengetahui BMI anda</p>
+    			
+    			<form>
+    				<div id="weightInput">
+    					<p>Berat Badan (Kg)</p>
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    				<div id="heightInput">
+    					<p>Tinggi Badan (Cm)</p>
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+    				</div>
+    		     	<button type="button" class="btn" onclick="calculate()">Cek BMI</button>
+    			</form>
+    		<div id="results" class="text-center">BMI anda akan tampil di sini</div>
+    	</div>
+    </div>
+	<script src="main.js"></script>
+</body>
+</html>
